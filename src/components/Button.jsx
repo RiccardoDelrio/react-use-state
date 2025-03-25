@@ -1,9 +1,11 @@
-export default function Button({ name }) {
+export default function Button({ name, key, onClick, classe, children, }) {
 
     return (
         <>
 
-            <div className="btn btn-primary m-3">{name}</div>
+            <div className={`btn m-3 ${classe}`} onClick={onClick} key={key}>
+                {name}
+            </div >
 
         </>
     )
