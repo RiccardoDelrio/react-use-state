@@ -11,7 +11,9 @@ export default function Main() {
         <>
             <div className="container">
                 {languages.map((item) => (
-                    < Button key={item.id} name={item.name} onClick={() => setLanguage(item.name) & setdescriptionlang(item.description)} classe={language === item.name ? "btn-warning" : "btn-primary"}  >
+                    < Button key={item.id} name={item.name}
+                        onClick={() => setLanguage(item.name) & setdescriptionlang(item.description)}
+                        classe={language === item.name ? "btn-warning" : "btn-primary"}  >
                         {item.name}
                     </Button>
                 )
